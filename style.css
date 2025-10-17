@@ -28,10 +28,24 @@ a:hover {
 
 /* --- Encabezado --- */
 .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
     border-bottom: 2px solid #007BFF; /* Línea azul bajo el encabezado */
     padding-bottom: 20px;
     margin-bottom: 30px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border: 3px solid #007BFF;
+}
+
+.header-text {
+    flex: 1; /* Ocupa el espacio restante */
 }
 
 .header h1 {
@@ -49,7 +63,7 @@ a:hover {
 
 .contact-info {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 15px; /* Espacio entre elementos de contacto */
     margin-top: 15px;
@@ -138,6 +152,16 @@ a:hover {
         padding: 20px;
     }
 
+    .header {
+        flex-direction: column; /* Apila la foto y el texto en vertical */
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
     .header h1 {
         font-size: 2.2em;
     }
@@ -147,7 +171,6 @@ a:hover {
     }
 
     .contact-info {
-        flex-direction: column; /* Apila la info de contacto en vertical */
-        gap: 5px;
+        justify-content: center; /* Centra los datos de contacto en móvil */
     }
 }
