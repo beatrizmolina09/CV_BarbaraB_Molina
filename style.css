@@ -1,0 +1,153 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: 'Lato', sans-serif; /* Fuente moderna y legible */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    color: #333; /* Color de texto principal oscuro */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff; /* Fondo blanco para el contenido principal */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+a {
+    color: #007BFF; /* Color azul para los enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Encabezado --- */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #007BFF; /* Línea azul bajo el encabezado */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.header h2 {
+    margin: 5px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #555;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre elementos de contacto */
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info p i {
+    margin-right: 8px;
+    color: #007BFF;
+}
+
+/* --- Secciones --- */
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 1.6em;
+    color: #007BFF; /* Títulos de sección en azul */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Experiencia Laboral --- */
+.job {
+    margin-bottom: 20px;
+}
+
+.job h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.job h5 {
+    margin: 5px 0;
+    font-weight: 400;
+    color: #777;
+    font-style: italic;
+}
+
+.education-item p {
+    margin: 5px 0 15px 0;
+}
+
+.job ul, .skills-list, .courses-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.job li, .skills-list li, .courses-list li {
+    margin-bottom: 8px;
+}
+
+/* --- Habilidades --- */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: #e7f3ff; /* Fondo azul claro para las etiquetas de habilidad */
+    color: #007BFF;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* --- Cursos --- */
+.courses-list {
+    padding-left: 20px; /* Alinea con las otras listas */
+}
+
+/* --- Diseño Responsivo para Móviles --- */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Apila la info de contacto en vertical */
+        gap: 5px;
+    }
+}
